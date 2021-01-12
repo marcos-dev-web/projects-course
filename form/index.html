@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<form action="" class="box_form" align="center">
+			<fieldset>
+				<legend>lorem ipsum dolor</legend>
+				<div class="box_inputs">
+					<div class="name_field">
+						<input
+							type="text"
+							name="name"
+							placeholder="Your name"
+							class="name"
+							spellcheck="false"
+						/>
+					</div>
+					<div class="email_field">
+						<input
+							type="email"
+							name="email"
+							placeholder="Your email"
+							class="email"
+							spellcheck="false"
+							autocomplete="email"
+						/>
+					</div>
+					<div class="select_field">
+						<select name="age" class="select">
+							<option selected disabled>Your age</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26+">&gt; 26</option>
+						</select>
+					</div>
+					<div class="options_field">
+						<h4 class="title">Your city</h4>
+						<div class="options_city">
+							<div class="item_city">
+								<input
+									type="radio"
+									name="city"
+									id="Barreira"
+									value="Barreira"
+									checked
+								/>
+								<label for="Barreira">Barreira</label>
+							</div>
+							<div class="item_city">
+								<input
+									type="radio"
+									name="city"
+									id="Fortaleza"
+									value="Fortaleza"
+								/>
+								<label for="Fortaleza">Fortaleza</label>
+							</div>
+							<div class="item_city">
+								<input
+									type="radio"
+									name="city"
+									id="Chorozinho"
+									value="Chorozinho"
+								/>
+								<label for="Chorozinho">Chorozinho</label>
+							</div>
+							<div class="item_city">
+								<input type="radio" name="city" id="Other" value="Other" />
+								<label for="Other">Other</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="options_field">
+						<h4 class="title">Your languages</h4>
+						<div class="options_lang">
+							<div class="item_lang">
+								<input
+									type="checkbox"
+									name="python"
+									id="Python"
+									value="Python"
+								/>
+								<label for="Python">Python</label>
+							</div>
+							<div class="item_lang">
+								<input type="checkbox" name="java" id="Java" value="Java" />
+								<label for="Java">Java</label>
+							</div>
+							<div class="item_lang">
+								<input
+									type="checkbox"
+									name="javascript"
+									id="JavaScript"
+									value="JavaScript"
+								/>
+								<label for="JavaScript">JavaScript</label>
+							</div>
+						</div>
+					</div>
+
+					<fieldset class="feed">
+						<legend>Description</legend>
+						<textarea
+							class="feed_text"
+							name="feed"
+							cols="30"
+							rows="10"
+							placeholder="Write anything about you"
+							spellcheck="false"
+							wrap="off"
+						></textarea>
+
+					</fieldset>
+
+					<div class="button_field">
+						<button type="submit">Submit</button>
+					</div>
+				</div>
+			</fieldset>
+		</form>
+	</body>
+</html>

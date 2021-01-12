@@ -1,0 +1,201 @@
+.box_form {
+  width: 95%;
+  max-width: 600px;
+  margin: 20px auto;
+  box-shadow: rgba(89, 144, 206, 0.589) 0px 2px 15px;
+  text-align: center;
+  padding: 20px 0;
+  border-radius: 3px;
+	transition: all .3s linear;
+}
+
+.box_form fieldset:not(.feed) {
+  border: none;
+}
+
+.box_form legend {
+  text-align: center;
+  padding: 0 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 0 auto;
+  font-family: Ubuntu, sans-serif;
+}
+
+.box_inputs {
+  padding: 10px;
+  margin-top: 20px auto;
+}
+
+.box_inputs input:not([type="radio"]) {
+  width: 80%;
+  margin: 8px 0;
+  padding: 5px 5px 1px 5px;
+  font-size: 18px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid white;
+  transition: all 0.2s ease;
+  color: #f1f2f6;
+}
+
+.box_inputs input::selection {
+  background-color: #a237fa;
+  color: white;
+}
+
+.box_inputs input:focus {
+  border-bottom: 2px solid #1e90ff;
+  box-shadow: rgba(89, 144, 206, 0.589) 0px 2px 15px;
+}
+
+.title {
+	color: #ced6e0;
+}
+
+.select_field {
+  display: flex;
+  justify-content: left;
+  width: 80%;
+  margin: 20px auto auto;
+}
+
+.select_field .select {
+  width: 20%;
+  min-width: 150px;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  padding: 5px;
+  border: 1px solid #70a1ff;
+  cursor: pointer;
+}
+
+.select_field .select option {
+  background-color: #2f3542;
+  color: white;
+}
+/* city check box */
+.options_field {
+  border: 1px solid white;
+  padding: 20px 0;
+  width: 80%;
+  margin: 20px auto auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options_field .title {
+  margin: 10px auto;
+  width: 80%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid lightblue;
+}
+
+.options_field .options_city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.options_field .options_city > .item_city {
+  margin: 5px auto;
+  text-align: left;
+  width: 100%;
+}
+
+.options_field .options_city > .item_city label {
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.options_field .options_city > .item_city label:hover {
+  color: #ff4757;
+}
+
+.options_field .options_city > .item_city input:checked ~ label {
+  color: #7bed9f;
+}
+
+/* lang check box */
+
+.options_lang {
+  width: 50%;
+  max-width: 150px;
+  min-width: 120px;
+}
+
+.options_lang > .item_lang {
+  margin: 5px auto;
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.options_lang > .item_lang input {
+  position: absolute;
+  left: 0;
+  top: -5px;
+  width: 20px;
+}
+
+.options_lang > .item_lang label {
+  transition: all 0.2s linear;
+  cursor: pointer;
+  flex: 1;
+  border-right: 1px solid rgba(255, 255, 255, 0.404);
+}
+
+.options_lang > .item_lang label:hover {
+  color: #ff4757;
+}
+
+.options_lang > .item_lang input:checked ~ label {
+  color: #7bed9f;
+}
+
+fieldset.feed {
+	width: 80%;
+	margin: 20px auto auto;
+	padding: 10px 0;
+	border-color: white;
+}
+
+fieldset.feed textarea {
+	background: #ced6e0;
+	color: #2f3542;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.feed_text {
+	resize: none;
+	width: 80%; 
+	padding: 2px;
+	font-size: 18px;
+	letter-spacing: 0.2px;
+}
+
+.button_field {
+	width: 80%;
+	margin: 10px auto auto;
+}
+
+.button_field button {
+	margin-top: 20px;
+	width: 100%;
+	padding: 5px;
+	font-size: 20px;
+	font-weight: 600;
+	color: white;
+	background: #5352ed;
+	border: none;
+	cursor: pointer;
+	transition: all .2s linear;
+}
+
+.button_field button:hover {
+	background-color: #5002ed;
+}
