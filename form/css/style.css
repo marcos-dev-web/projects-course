@@ -1,3 +1,15 @@
+
+@keyframes scale {
+	from {
+		transform: scale(0.5);
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
 .box_form {
   width: 95%;
   max-width: 600px;
@@ -7,6 +19,7 @@
   padding: 20px 0;
   border-radius: 3px;
 	transition: all .3s linear;
+	animation: scale 500ms linear;
 }
 
 .box_form fieldset:not(.feed) {

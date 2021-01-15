@@ -51,7 +51,7 @@
 							<div class="item_city">
 								<input
 									type="radio"
-									name="city"
+									name="city[]"
 									id="Barreira"
 									value="Barreira"
 									checked
@@ -61,7 +61,7 @@
 							<div class="item_city">
 								<input
 									type="radio"
-									name="city"
+									name="city[]"
 									id="Fortaleza"
 									value="Fortaleza"
 								/>
@@ -70,14 +70,13 @@
 							<div class="item_city">
 								<input
 									type="radio"
-									name="city"
-									id="Chorozinho"
+									name="city[]"
 									value="Chorozinho"
 								/>
 								<label for="Chorozinho">Chorozinho</label>
 							</div>
 							<div class="item_city">
-								<input type="radio" name="city" id="Other" value="Other" />
+								<input type="radio" name="city[]" id="Other" value="Other" />
 								<label for="Other">Other</label>
 							</div>
 						</div>
@@ -122,11 +121,10 @@
 							spellcheck="false"
 							wrap="off"
 						></textarea>
-
 					</fieldset>
 
 					<div class="button_field">
-						<button type="submit">Submit</button>
+						<button type="submit" name="submit">Submit</button>
 					</div>
 				</div>
 			</fieldset>

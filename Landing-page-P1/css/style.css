@@ -1,0 +1,242 @@
+
+header.head {
+  background-color: #273c75;
+  width: 100%;
+  height: 60px;
+  border-bottom: 2px solid #00a8ff;
+  color: white;
+  padding: 0 30px;
+}
+
+header.head .logo {
+  width: 120px;
+	cursor: pointer;
+}
+
+header.head a {
+	display: flex;
+	align-items: center;
+	height: 100%;
+}
+
+.container_banner {
+  background-image: url('../images/header_bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 70%;
+  min-height: 300px;
+  max-height: 450px;
+  position: relative;
+}
+
+section.form {
+  position: absolute;
+  min-width: 330px;
+  max-width: 420px;
+  width: 40%;
+  height: calc(100% + 30px);
+	min-height: 435px;
+  top: -15px;
+  right: 15px;
+  border-radius: 4px;
+  background-color: white;
+  box-shadow: rgba(61, 80, 105, 0.603) 0px 5px 25px,
+              rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+	z-index: 2;
+}
+
+section.form .title h3 {
+  width: 100%;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: justify;
+  color: #abadb4;
+}
+
+section.form .title h3 span {
+  color: #e84218d0;
+}
+
+.important {
+	color: red;
+}
+
+.container_input {
+	display: flex;
+	flex-direction: column;
+	padding: 0 20px;
+	align-items: left;
+	margin: 20px auto;
+}
+
+.container_input label {
+	color: gray;
+}
+
+.container_input > input {
+	padding: 2px 3px 0px 2px;
+	border-radius: 3px;
+	border: 1px solid gray;
+	color: #2f3640;
+	outline: none;
+	transition: all .2s linear;
+	font-size: 17px;
+}
+
+.container_input > input:not([type="submit"]):focus {
+	border: 1px solid #0097e6;
+}
+
+.form-a > p.info {
+	color: gray;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.form-a > button[type="submit"] {
+	display: block;
+	width: 80%;
+	font-size: 18px;
+	color: white;
+	background: #273c75;
+	font-weight: 520;
+	border: none;
+	outline: none;
+	padding: 4px;
+	margin: 40px auto;
+	cursor: pointer;
+	transition: all .2s linear;
+	border-radius: 3px;
+}
+
+.form-a > button[type="submit"]:hover {
+	background: #273c95;
+}
+
+.container_banner {
+	display: flex;
+	align-items: center;
+	padding-left: 30px;
+}
+
+.list-items {
+	min-width: 475px;
+	padding: 10px;
+	list-style-position: inside;
+	color: white;
+	width: 50%;
+	height: 70%;
+	background-color: rgba(5,55,100,.6);
+}
+
+@media (max-width: 915px) {
+	.list-items {
+		display: none;
+	}
+}
+
+.list-items ul {
+	padding: 10px;
+	width: 100%;
+	height: 100%;
+}
+
+.list-items ul > li {
+	height: calc(100% / 3);
+	width: 101%;
+}
+
+section.information {
+	width: 100%;
+	background: #d2dae2;
+	padding: 10px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+section.information .content_text {
+	width: 90%;
+	display: inline-block;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+section.information .content_text h1.title_text{
+	margin: 30px auto;
+}
+
+section.information .content_text p {
+	text-align: justify;
+	color: #1e272e;
+	font-variant: small-caps;
+	font-size: 17px;
+	font-weight: 550;
+	line-height: 25px;
+	letter-spacing: 1.2px;
+}
+
+.arrow {
+	position: absolute;
+	top: 100%;
+}
+
+.arrow img {
+	margin-top: -30px;
+	margin-bottom: 5px;
+}
+
+section.items_list {
+	width: 100%;
+	padding: 0 20px;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+section.items_list .item {
+	width: calc((100% / 3) - 10px);
+	min-width: 300px;
+	max-width: 450px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px;
+	margin: 20px auto;
+}
+
+section.items_list .item h4 {
+	margin: 20px auto;
+}
+
+section.items_list .item p {
+	text-align: justify;
+}
+
+footer {
+	border-top: 2px solid gray;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 10px;
+	color: #485460;
+}
+
+.destaque a {
+	color: #3c40c6;
+	transition: all .1s ease;
+	text-decoration: none;
+}
+
+.destaque a:hover {
+	color: #0f00c6;
+	text-decoration: underline;
+}
