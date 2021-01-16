@@ -6,9 +6,13 @@
   box-sizing: border-box;
 }
 
+*::selection {
+  background-color: #ff5e57;
+  color: white;
+}
+
 body {
   background-color: #1e272e;
   color: white;
-  /* font-family: 'Hachi Maru Pop', cursive; funny font */
   font-family: 'Open Sans', sans-serif; /*font default*/
 }
