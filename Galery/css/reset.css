@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1e272e;
+  color: white;
+  /* font-family: 'Hachi Maru Pop', cursive; funny font */
+  font-family: 'Open Sans', sans-serif; /*font default*/
+}
