@@ -33,6 +33,7 @@ header.head a {
 
 section.form {
   position: absolute;
+	transition: all .2s linear;
   min-width: 330px;
   max-width: 420px;
   width: 40%;
@@ -47,12 +48,16 @@ section.form {
 	z-index: 2;
 }
 
+section.form .title {
+	transition: all .2s linear;
+}
+
 section.form .title h3 {
   width: 100%;
   padding: 10px;
   font-weight: 500;
   font-size: 16px;
-  text-align: justify;
+  text-align: center;
   color: #abadb4;
 }
 
@@ -84,6 +89,7 @@ section.form .title h3 span {
 	outline: none;
 	transition: all .2s linear;
 	font-size: 17px;
+	transition: all .2s linear;
 }
 
 .container_input > input:not([type="submit"]):focus {
@@ -125,16 +131,48 @@ section.form .title h3 span {
 .list-items {
 	min-width: 475px;
 	padding: 10px;
-	list-style-position: inside;
 	color: white;
 	width: 50%;
 	height: 70%;
+	transition: all .2s linear;
 	background-color: rgba(5,55,100,.6);
 }
 
+.list-items ul {
+	list-style-position: inside;
+}
+
 @media (max-width: 915px) {
+
+	.container_banner {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+		align-items: center;
+		max-height: none;
+		padding: 0;
+	}
+
 	.list-items {
-		display: none;
+		width: 95% !important;
+		min-width: 10px;
+		margin: 20px auto;
+	}
+
+	.list-items ul li {
+		margin: 10px auto;
+		text-align: justify;
+		border-bottom: 1px solid rgba(200,200,200, .5);
+		padding-bottom: 10px;
+		text-indent: 20px;
+	}
+
+
+	section.form {
+		position: static;
+		width: 100%;
+		max-width: none;
+		border-radius: 0;
 	}
 }
 
