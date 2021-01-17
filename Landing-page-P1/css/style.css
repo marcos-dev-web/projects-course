@@ -83,6 +83,7 @@ section.form .title h3 span {
 
 .container_input > input {
 	padding: 2px 3px 0px 2px;
+	margin-top: 10px;
 	border-radius: 3px;
 	border: 1px solid gray;
 	color: #2f3640;
@@ -156,6 +157,7 @@ section.form .title h3 span {
 	.list-items {
 		width: 95% !important;
 		min-width: 10px;
+		max-width: 600px;
 		margin: 20px auto;
 	}
 
@@ -171,7 +173,7 @@ section.form .title h3 span {
 	section.form {
 		position: static;
 		width: 100%;
-		max-width: none;
+		max-width: 600px;
 		border-radius: 0;
 	}
 }
