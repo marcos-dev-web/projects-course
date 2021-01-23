@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
+}
+
+*::selection {
+  background-color: #1abc9c;
+  color: white;
 }
 
 html,
@@ -10,14 +16,14 @@ body {
 }
 
 body {
-  background-color: #0b0c13;
-  color: white;
+  background-color: var(--black-light);
+  color: var(--white);
   font-family: Ubuntu, Arial, Helvetica, sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: #0fbcf9;
+  color: var(--blue-cyan);
   font-family: "Courier New", Courier, monospace;
   transition: all 0.15s linear;
 }
@@ -25,5 +31,5 @@ a {
 a:hover,
 a:active,
 a:focus {
-  color: #ef5777;
+  color: var(--red);
 }

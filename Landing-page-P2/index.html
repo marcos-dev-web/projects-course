@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="the seconde project of lading page">
+  <meta name="keywords" content="landing-page,buy">
+  <meta name="author" content="Marcos Vinicius">
+  <meta name="theme-color" content="#2c3e50"/>
+  <title>Landing page P2</title>
+  <link rel="stylesheet" href="./src/css/main.css">
+  <link rel="stylesheet" href="./src/css/reset.css">
+</head>
+<body>
+  <header class="header__main">
+    <div class="header__container max_width">
+      <div class="logo">
+        <h1><a href="/index.html">Marcos Tech</a></h1>
+      </div>
+      <div class="logo">
+        <a href="/index.html">
+          <img class="logo_img" src="./src/img/logo-placeholder.png" alt="logo placeholder">
+        </a>
+      </div>
+    </div> <!--.header__container-->
+  </header> <!--.header__main-->
+  <section class="banner__main">
+    <div class="banner__container max_width">
+      <div class="form__container">
+        <form>
+          <div class="box__input">
+            <label for="name"><span class="important">*</span> Nome Completo</label>
+            <input class="input" type="text" name="name" id="name" required title="digite o seu nome" spellcheck="false" autocomplete="off" placeholder="Digite o seu nome"/>
+          </div>
+          <div class="box__input">
+            <label for="email"><span class="important">*</span> Email</label>
+            <input class="input" type="email" name="email" id="email" required title="digite o seu email" spellcheck="false" autocomplete="off" placeholder="Digite o seu Email"/>
+          </div>
+          <div class="box__input">
+            <label for="fone"><span class="important">*</span> Fone</label>
+            <input class="input" type="tel" name="fone" id="fone" required title="digite o seu telefone" spellcheck="false" autocomplete="off" placeholder="Digite o seu Fone"/>
+          </div>
+          <div class="box__input inform">
+            <p><span class="important">*</span> Campos Obrigatórios</p>
+          </div>
+          <div class="box__input">
+            <button type="submit" class="send" name="go">Enviar</button>
+          </div>
+        </form>
+      </div> <!--.form__container-->
+    </div> <!--.banner__container-->
+  </section> <!--.banner__main-->
+</body>
+</html>
