@@ -10,13 +10,9 @@ body {
 }
 
 body {
-  background-color: #485460;
+  background-color: #0b0c13;
   color: white;
   font-family: Ubuntu, Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
 }
 
 a {
@@ -30,15 +26,4 @@ a:hover,
 a:active,
 a:focus {
   color: #ef5777;
-}
-
-main {
-  background-color: #1e272e;
-  max-width: 1000px;
-  width: 98%;
-  height: 98%;
-  border-radius: 10px;
-  box-shadow: rgba(13, 47, 51, 0.37) 0px 7px 29px 0px;
-  box-sizing: content-box;
-  overflow: auto;
 }
