@@ -1,11 +1,13 @@
 @import url('./form.css');
+@import url('./mosaic.css');
 
 :root {
   --red: #ef5777;
   --blue-cyan: #0fbcf9;
-  --black-light: #2c3e50;
-  --black-dark: #34495e;
+  --black-dark: #2c3e50;
+  --black-light: #34495e;
   --white: #ecf0f1;
+  --green: #1abc9c;
 }
 
 .max_width {
@@ -81,4 +83,48 @@ header.header__main .header__container {
   width: 100%;
   height: 400px;
   position: relative;
+}
+
+section.apresentation {
+  width: 100%;
+}
+
+section.apresentation .title {
+  text-align: center;
+  padding: 30px;
+  background-color: var(--black-dark);
+  position: relative;
+}
+
+.arrow__container {
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 60px;
+  background-color: var(--blue-cyan);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow__container span {
+  height: 30px;
+  width: 5px;
+  background-color: white;
+  border-radius: 3px;
+  display: block;
+  position: absolute;
+}
+
+.arrow__container span:nth-child(1) {
+  transform: rotate(-45deg);
+  left: 18px;
+}
+
+.arrow__container span:nth-child(2) {
+  transform: rotate(45deg);
+  right: 18px;
 }
