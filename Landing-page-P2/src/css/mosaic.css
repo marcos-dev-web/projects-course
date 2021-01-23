@@ -1,0 +1,40 @@
+.mosaic__container {
+  background-color: var(--green);
+  width: 100%;
+  padding: 40px 0;
+  margin: 0 auto;
+}
+
+.mosaic {
+  padding: 10px;
+  background-color: var(--black-dark);
+  margin: 10px auto;
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.mosaic .text_msc {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  min-width: 300px;
+  background-color: var(--black-light);
+}
+
+.mosaic .text_msc p {
+  text-align: justify;
+}
+
+@media screen and (max-width: 750px) {
+  .mosaic .img_msc {
+    order: 1;
+  }
+
+  .mosaic .text_msc {
+    order: 2;
+  }
+}
