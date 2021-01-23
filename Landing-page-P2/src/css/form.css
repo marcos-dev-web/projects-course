@@ -12,7 +12,23 @@
   background-color: #34495ef9;
   border-radius: 3px;
   padding: 10px;
-  box-shadow: rgba(93, 93, 116, 0.527) 0px 7px 29px 0px;
+  padding-top: 0;
+  box-shadow: rgba(36, 36, 61, 0.39) 0px 7px 29px 0px;
+}
+
+.form__container .title {
+  width: calc(100% + 20px);
+  text-align: center;
+  margin: 0 0 10px -10px;
+  padding: 10px;
+  border-bottom: 1px solid var(--white);
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  background-color: var(--black-light);
+}
+
+.form__container .title h3 {
+  color: var(--blue-cyan);
 }
 
 .form__container .box__input {
