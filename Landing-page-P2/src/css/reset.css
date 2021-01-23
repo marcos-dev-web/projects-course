@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #485460;
+  color: white;
+  font-family: Ubuntu, Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #0fbcf9;
+  font-family: "Courier New", Courier, monospace;
+  transition: all 0.15s linear;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #ef5777;
+}
+
+main {
+  background-color: #1e272e;
+  max-width: 1000px;
+  width: 98%;
+  height: 98%;
+  border-radius: 10px;
+  box-shadow: rgba(13, 47, 51, 0.37) 0px 7px 29px 0px;
+  box-sizing: content-box;
+  overflow: auto;
+}
