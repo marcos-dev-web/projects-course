@@ -8,15 +8,38 @@
 .mosaic {
   padding: 10px;
   background-color: var(--black-dark);
-  margin: 10px auto;
-  width: 98%;
+  margin: 5px auto;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  cursor: pointer;
+  transition: all .2s linear;
+  transform: scale(0.95);
+}
+
+.mosaic:hover {
+  transform: scale(1);
+}
+
+.mosaic .img_msc {
+  max-width: 400px;
+}
+
+.mosaic .img_msc img {
+  width: 100%;
+}
+
+.mosaic:nth-child(2n + 1) .img_msc {
+  order: 1;
+}
+
+.mosaic:nth-child(2n + 2) .text_msc {
+  order: 2;
 }
 
 .mosaic .text_msc {
-  padding: 10px;
+  padding: 10px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -37,4 +60,16 @@
   .mosaic .text_msc {
     order: 2;
   }
+}
+
+footer {
+  width: 100%;
+  background-color: var(--black-dark);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.pipe {
+  color: var(--white);
+  padding: 0 5px;
 }
