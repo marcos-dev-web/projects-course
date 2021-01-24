@@ -1,0 +1,160 @@
+section.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.banner__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  background-image: url("../img/capa.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  max-height: 550px;
+  position: relative;
+}
+
+header.header__banner {
+  width: 90%;
+  text-align: right;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+header.header__banner nav.nav__header_banner {
+  padding: 10px 0;
+  margin-right: 10px;
+}
+
+.nav__header_banner a {
+  margin: 0 10px;
+  font-weight: 300;
+  color: lightgray;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav__header_banner a.active {
+  color: var(--dark-white);
+  font-weight: 700;
+}
+
+.nav__header_banner a::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.2s ease;
+}
+
+.nav__header_banner a.active:hover {
+  color: var(--dark-green);
+}
+
+.nav__header_banner a.active:hover::before {
+  background-color: var(--dark-green);
+}
+
+.nav__header_banner a:hover {
+  color: var(--light-blue);
+}
+
+.nav__header_banner a:hover::before {
+  background-color: var(--light-blue);
+}
+
+.text__banner {
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+}
+
+.text__banner .title {
+  font-weight: 300;
+  font-size: 35px;
+  color: var(--light-white);
+}
+
+.text__banner .description {
+  font-size: 14px;
+  margin-top: 20px;
+  color: var(--dark-white);
+  text-shadow: 1px 0px 4px black;
+}
+
+.nav__header_banner,
+.header__banner,
+.text__banner {
+  transition: all 0.2s linear;
+}
+
+@media screen and (max-width: 1200px) {
+  main.container__main {
+    border: none !important;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  main.container__main {
+    border: none !important;
+  }
+  .text__banner {
+    top: 40%;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header__banner {
+    width: 100%;
+  }
+
+  .nav__header_banner {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .text__banner {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .text__banner .title {
+    text-align: center;
+  }
+
+  .text__banner .description {
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 355px) {
+  .nav__header_banner {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .nav__header_banner {
+    width: 100% !important;
+    margin: 0 auto !important;
+  }
+
+  .nav__header_banner a {
+    margin: 0;
+  }
+}
