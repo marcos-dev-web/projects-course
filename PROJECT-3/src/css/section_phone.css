@@ -1,0 +1,170 @@
+:root {
+  --dist: 100px;
+}
+
+.section__phone {
+  height: 300px;
+  background-color: var(--black-purple);
+  position: relative;
+  padding: 0 var(--dist);
+}
+
+.left {
+  max-width: 500px;
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.image_phone {
+  background: transparent;
+  z-index: 5;
+  min-height: 310px;
+  min-width: 380px;
+  max-height: 330px;
+  max-width: 390px;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  right: var(--dist);
+  background: transparent;
+}
+
+.image_phone img {
+  width: 100%;
+  /*background: rgba(0,0,0,.5);*/
+  margin-bottom: -5px;
+}
+
+.up {
+  height: 200px;
+}
+
+.left .title {
+  margin: 15px 0;
+  text-indent: 30px;
+}
+
+.left .title h1 {
+  font-weight: 400;
+}
+
+.list_container .text_list {
+  color: var(--dark-white);
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.list_container .list ul {
+  list-style-position: inside;
+}
+
+.list_container .list ul li {
+  color: var(--dark-white);
+}
+
+a.button {
+  display: block;
+  width: 150px;
+  padding: 10px 10px;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: var(--light-orange);
+  color: var(--white);
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+a.button:hover {
+  background-color: var(--dark-orange);
+}
+
+@media screen and (max-width: 880px) {
+  section.section__phone {
+    flex-direction: column;
+    min-height: auto;
+    height: auto;
+  }
+
+  .left {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .image_phone {
+    position: static;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  section.section__phone {
+    padding: 0;
+  }
+  .left {
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .list {
+    text-align: center;
+  }
+
+  .left .title {
+    text-indent: 0;
+  }
+
+  .list ul {
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+  }
+
+  a.button {
+    margin: 20px auto;
+  }
+
+  .image_phone {
+    width: 100%;
+    min-height: 0;
+    height: auto;
+    position: relative;
+    bottom: -2px;
+    left: calc(50% - 1px);
+    transform: translateX(-50%);
+  }
+
+  .image_phone,
+  .image_phone img {
+    min-width: 0;
+  }
+
+  .image_phone img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header__banner {
+    width: 100% !important;
+    right: 0 !important;
+  }
+  .left .title,
+  .text_list {
+    padding: 0 10px;
+  }
+
+  .text_list {
+    text-align: center;
+  }
+}
