@@ -1,5 +1,5 @@
-@import url('./colors.css');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url("./colors.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: var(--dark-black);
   color: var(--light-white);
   display: flex;
@@ -18,7 +18,7 @@ body {
 a {
   color: var(--light-green);
   text-decoration: none;
-  transition: all .1s linear;
+  transition: all 0.1s linear;
 }
 
 a:hover,
