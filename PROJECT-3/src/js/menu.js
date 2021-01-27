@@ -5,18 +5,20 @@ const menu_view = document.querySelector(".nav__header_banner");
 
 const menu = {
   open() {
+    window.scroll(0, 0);
     menu_view.style.left = "0px";
     menu_label.style = "color: rgb(100, 142, 219) !important;";
     open = true;
   },
   close() {
+    window.scroll(0, 0);
     menu_view.style.left = "-200px";
     menu_label.style = "color: white !important";
     open = false;
   },
 };
 
-menu_buton.addEventListener("click", (e) => {
+menu_buton.addEventListener("click", () => {
   if (!open) {
     menu.open();
   } else {
