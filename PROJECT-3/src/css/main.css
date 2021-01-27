@@ -24,24 +24,15 @@ section.banner {
 }
 
 .logo {
-  position: absolute;
-  left: 10px;
-  top: 10px;
   background-color: var(--dark-green);
-  padding: 0 10px;
   border-radius: 5px;
   transition: all .1s ease;
+  height: 60px;
+  width: 60px;
 }
 
-.logo a {
-  font-weight: bolder;
-  font-size: 18px;
-  text-decoration: none;
-  color: var(--dark-white);
-}
-
-.logo:hover a {
-  color: var(--light-white);
+.logo a img {
+  width: 60px;
 }
 
 header.header__banner {
@@ -50,6 +41,9 @@ header.header__banner {
   position: absolute;
   top: 20px;
   right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header.header__banner nav.nav__header_banner {
@@ -124,6 +118,38 @@ header.header__banner nav.nav__header_banner {
   transition: all 0.2s linear;
 }
 
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #222f3e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid rgba(165, 173, 175, 0.705);
+}
+
+footer .credits {
+  width: 90%;
+  height: 80%;
+}
+
+footer .credits .title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+footer .credits .title h1 {
+  font-size: 25px;
+}
+
+footer .credits ul {
+  list-style: none;
+  list-style-position: inside;
+  margin-left: 20px;
+}
+
 @media screen and (max-width: 1200px) {
   main.container__main {
     border: none !important;
@@ -141,15 +167,6 @@ header.header__banner nav.nav__header_banner {
 }
 
 @media screen and (max-width: 600px) {
-  .header__banner {
-    width: 100%;
-  }
-
-  .logo {
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-  }
 
   .nav__header_banner {
     text-align: center;
@@ -158,6 +175,10 @@ header.header__banner nav.nav__header_banner {
 }
 
 @media screen and (max-width: 450px) {
+  .header__banner {
+    flex-wrap: wrap;
+    justify-content: center !important;
+  }
   .text__banner {
     width: 100%;
     padding: 0 10px;
@@ -173,9 +194,16 @@ header.header__banner nav.nav__header_banner {
 }
 
 @media screen and (max-width: 355px) {
+  .logo {
+    display: none;
+  }
   .nav__header_banner {
+    margin-top: 10px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
   }
 }
 
