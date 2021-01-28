@@ -2,7 +2,7 @@
 
 * create a file in the path root with the name key.js
 * inside this file, type
-```
+```javascript
 export default () => "YOUR_API_KEY"
 ```
 * done!
