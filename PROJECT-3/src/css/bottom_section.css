@@ -1,0 +1,126 @@
+@import url('./colors.css');
+
+
+section.section__form {
+  width: 100%;
+  background-color: var(--gui-purple);
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+section.section__form aside {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.form_container .container__aside .header_form {
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.container__aside .header_form h1 {
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.header_form p {
+  text-align: justify;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.form__box {
+  width: 100%;
+  height: 100%;
+}
+
+.form__box form .input_form,
+.form__box form .text_area {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: gray;
+  background-color: white;
+  margin: 5px 0;
+  font-size: 18px;
+  font-family: Inter;
+  border-radius: 5px;
+}
+
+.form__box form .text_area {
+  resize: none;
+  height: 200px;
+  overflow-wrap: initial;
+}
+
+form .submit {
+  font-weight: bold;
+  color: white;
+  background-color: var(--light-orange);
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all .2s linear;
+}
+
+form .submit:hover {
+  background-color: var(--dark-orange);
+}
+
+.maps_container {
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+
+.map__container {
+  min-width: 300px;
+  min-height: 300px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.maps_container .title h1 {
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 970px) {
+  .section__form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.section__form aside {
+    width: 80% !important;
+  }
+
+  .form_container {
+    width: 100%;
+  }
+
+  .map__container {
+    width: 100%;
+    height: 400px !important;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  section.section__form aside {
+    width: 90% !important;
+  }
+}

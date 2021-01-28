@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="./src/css/main.css" />
     <link rel="stylesheet" href="./src/css/middle.css" />
+    <link rel="stylesheet" href="./src/css/bottom_section.css" />
   </head>
   <body>
     <main class="container__main">
@@ -118,11 +119,72 @@
                 dolorum, eveniet sunt laboriosam quas.
               </p>
             </div>
+            <div class="whells">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+            </div>
           </div>
         </div>
       </section>
-      <div class="up"></div>
+      <section class="section__form">
+        <aside class="form_container">
+          <div class="container__aside">
+            <header class="header_form">
+              <h1>Entre em contato</h1>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt
+                aut sed facilis saepe, repellat expedita ipsa hic dicta, iusto
+                asperiores minus voluptas a quae consequaturs!
+              </p>
+            </header>
+            <div class="form__box">
+              <form action="#">
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Nome"
+                  required
+                  autocomplete="off"
+                  spellcheck="false"
+                  class="input_form"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                  required
+                  autocomplete="off"
+                  spellcheck="false"
+                  class="input_form"
+                />
+                <textarea
+                  name="msg"
+                  id="msg"
+                  placeholder="Menssagem"
+                  required
+                  autocomplete="off"
+                  spellcheck="false"
+                  class="text_area"
+                ></textarea>
+                <input type="submit" value="Enviar" class="submit"/>
+              </form>
+            </div>
+          </div>
+        </aside>
+        <aside class="maps_container">
+          <div class="title">
+            <h1>Faça uma visita</h1>
+          </div>
+          <div class="map__container">
+
+          </div>
+        </aside>
+      </section>
     </main>
     <script src="./src/js/menu.js"></script>
+    <script type="module" src="./src/js/maps.js"></script>
   </body>
 </html>
