@@ -38,3 +38,11 @@ main.container__main {
   overflow-y: auto;
   border-bottom: none;
 }
+
+#content {
+  color: black;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 30px;
+}

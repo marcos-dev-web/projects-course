@@ -1,23 +1,60 @@
-import api_key from '../../key.js';
+import api_key from "../../key.js";
 
 const key = api_key();
 
-console.log(key)
-var script = document.createElement('script');
+var script = document.createElement("script");
 script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap`;
 script.defer = true;
 
-const map_view = document.querySelector('.map__container');
+const map_view = document.querySelector(".map__container");
 
-let map;
 
-window.initMap = function() {
-  map = new google.maps.Map(map_view, {
-    center: {lat: -34.397, lng: 150.644},
-    zoom: 8
+
+let LatLng = {lat: -4.2970899,lng: -38.5729892}
+
+
+const addMarker = (location, map) => {
+  let label = 'C';
+
+  return new google.maps.Marker({
+    position: location,
+    label,
+    map: map
   })
+}
+
+const addInfo = (marker, map, html) => {
+  let infowindow = new google.maps.InfoWindow({
+    content: html,
+    value: html,
+  })
+
+  marker.addListener('click', () => {
+    infowindow.open(map, marker)
+  })
+}
+
+window.initMap = function () {
+  let map = new google.maps.Map(map_view, {
+    center: LatLng,
+    zoom: 16,
+  });
   
+  let marker = new google.maps.Marker({
+    position: LatLng,
+    map: map,
+    title: "Córrego"
+  });
+
+  let html = 
+  "<div id='content'>"+
+  "<h1 id='firstHeading' class='firstHeading'><b>Barreira</b></h1>" +
+  "<p>Córrego</p>" +
+  "</div>"
+  
+
+  
+  addInfo(marker, map, html)
 };
 
 document.head.appendChild(script);
-      
