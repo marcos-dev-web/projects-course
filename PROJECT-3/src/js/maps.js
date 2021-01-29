@@ -1,14 +1,11 @@
-import api_key from "../../key.js";
 
-const key = api_key();
+const key = "AIzaSyA5Uy6K1TONn7v5A26PudCYnWzIPIPDP6U";
 
 var script = document.createElement("script");
 script.src = `https://maps.googleapis.com/maps/api/js?key=${key}&callback=initMap`;
 script.defer = true;
 
 const map_view = document.querySelector(".map__container");
-
-
 
 let LatLng = {lat: -4.2970899,lng: -38.5729892}
 
