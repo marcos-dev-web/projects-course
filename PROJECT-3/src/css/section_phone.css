@@ -59,8 +59,13 @@
   list-style-position: inside;
 }
 
-.list_container .list ul li {
+.list_container .list ul li a {
   color: var(--dark-white);
+  text-decoration: none;
+}
+
+.list_container .list ul li a:hover {
+  color: var(--light-green);
 }
 
 a.button {

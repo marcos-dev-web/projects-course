@@ -61,14 +61,23 @@ main.container__main {
   font-size: 20px;
   border-radius: 10px;
   position: fixed;
-  right: 10px;
+  right: -50px;
   bottom: 10px;
   z-index: 100;
   background-color: rgba(22, 255, 127, 0.336);
   cursor: pointer;
   outline: none;
+  transition: all .2s linear;
+}
+@media screen and (min-width: 580px) {
+  .top:hover {
+    background-color: rgba(22, 255, 127, 0.418);
+    right: 5px;
+  }
 }
 
-.top:hover {
-  background-color: rgba(22, 255, 127, 0.418);
+@media screen and (max-width: 579px) {
+  .top {
+    right: 5px;
+  }
 }

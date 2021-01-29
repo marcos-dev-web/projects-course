@@ -111,7 +111,6 @@ section.demonstration .container_middle {
   height: 10px;
   border-radius: 50%;
   background-color: #4b6584;
-  cursor: pointer;
   transition: all .2s linear;
 }
 
@@ -130,6 +129,18 @@ section.demonstration .container_middle {
 
 .d_i_right .title_d_right img {
   pointer-events: none;
+  width: 60px;
+  transform: rotate(-30deg);
+}
+
+.title_d_right .img_profile {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .d_i_right span {

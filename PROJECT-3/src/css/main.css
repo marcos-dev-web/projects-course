@@ -34,7 +34,7 @@ header.header__banner {
   align-items: center;
   justify-content: flex-end;
   height: 60px;
-  background-color: rgba(78, 109, 167, 0.5);
+  background-color: rgba(20, 25, 34, 0.5);
 }
 
 header.header__banner nav.nav__header_banner {
@@ -51,7 +51,7 @@ header.header__banner nav.nav__header_banner {
 }
 
 .nav__header_banner a.active {
-  color: var(--dark-white);
+  color: var(--light-green);
   font-weight: 700;
 }
 

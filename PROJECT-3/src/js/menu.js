@@ -15,7 +15,6 @@ const menu = {
     open = true;
   },
   close() {
-    window.scroll(0, 0);
     menu_view.style.left = "-200px";
     menu_label.style = "color: white !important";
     open = false;
@@ -42,11 +41,8 @@ menu_buton.addEventListener("mouseout", () => {
   }
 });
 
-window.addEventListener("scroll", (e) => {
-  if (open) {
-    e.preventDefault();
+window.addEventListener("scroll", () => {
     menu.close();
-  }
 });
 
 const links = qa('.link_menu');
