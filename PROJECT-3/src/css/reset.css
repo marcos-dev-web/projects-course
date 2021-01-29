@@ -5,6 +5,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+*::selection {
+  background-color: #00d8d6;
+  color: white;
 }
 
 html,
@@ -30,7 +36,6 @@ a:hover,
 a:active,
 a:focus {
   color: var(--dark-green);
-  text-decoration: underline;
 }
 
 main.container__main {

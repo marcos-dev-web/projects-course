@@ -52,7 +52,7 @@ section.section__form aside {
   background-color: white;
   margin: 5px 0;
   font-size: 18px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   border-radius: 5px;
 }
 
@@ -110,7 +110,7 @@ footer {
 
 footer p {
   font-size: 14px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   color: #eee;
 }
 
