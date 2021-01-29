@@ -1,7 +1,11 @@
 var open = false;
-const menu_buton = document.querySelector(".menu_");
-const menu_label = document.querySelector(".menu_ i");
-const menu_view = document.querySelector(".nav__header_banner");
+
+const q = (e) => document.querySelector(e);
+const qa = (e) => document.querySelectorAll(e);
+
+const menu_buton = q(".menu_");
+const menu_label = q(".menu_ i");
+const menu_view = q(".nav__header_banner");
 
 const menu = {
   open() {
@@ -44,3 +48,16 @@ window.addEventListener("scroll", (e) => {
     menu.close();
   }
 });
+
+const links = qa('.link_menu');
+
+links.forEach((link) => {
+  link.addEventListener('click', (e) => {
+    q('.link_menu.active').classList.remove('active');
+    e.target.classList.add('active')
+  })
+})
+
+q('.top').addEventListener('click', () => {
+  window.scroll(0,0);
+})
