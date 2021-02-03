@@ -1,0 +1,128 @@
+/*header*/
+.header {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 0 25px;
+  position: relative;
+}
+
+.header__menu {
+  padding-bottom: 10px;
+  transition: all 500ms linear;
+  background: white;
+}
+
+.header__menu-link {
+  text-transform: uppercase;
+  font-weight: lighter;
+  color: #8e9194;
+  margin: 50px;
+  font-size: 15px;
+  transition: all 150ms ease-in;
+}
+
+.header__menu-link:hover {
+  color: #555b63;
+}
+
+.menu__hamburger-mobile {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  cursor: pointer;
+  transform: translateY(-200px);
+  transition: all 200ms linear;
+}
+
+.menu__hamburger-mobile i {
+  transition: all 150ms ease-in;
+}
+
+.menu__hamburger-mobile:hover i {
+  color: #555b63;
+}
+
+.fa-bars {
+  font-size: 30px;
+  color: #8e9194;
+}
+
+@media screen and (max-width: 1100px) {
+  .header__menu-link {
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .header__menu-link {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 790px) {
+  .menu__hamburger-mobile {
+    transform: translateY(0px);
+  }
+
+  .header__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom: 1px solid gray;
+    padding: 0;
+  }
+
+  .header__menu-link {
+    width: 100%;
+    margin: 0;
+    height: calc(150px / 4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header__menu-link:hover {
+    background-color: rgba(200,200,200,.5);
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .header {
+    align-items: center;
+  }
+
+  .menu__hamburger-mobile {
+    top: 10px;
+    right: 10px;
+  }
+
+  .header__logo img {
+    width: 200px;
+  }
+}
+
+.hide {
+  height: 0;
+  padding: 0;
+  margin: 0;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  border-bottom: none;
+  transition: all 500ms linear;
+}
+
+.show {
+  height: 150px;
+  overflow: hidden;
+}
