@@ -2,66 +2,67 @@
 button,
 input,
 textarea {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    scroll-behavior: smooth;
-    transition: all 100ms linear;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth;
+  transition: all 100ms linear;
 }
 
 *::selection {
-    background: rgb(201, 93, 43);
-    color: white;
+  background: rgb(201, 93, 43);
+  color: white;
 }
 
 *::-moz-selection {
-    background: rgb(201, 93, 43);
-    color: white;
+  background: rgb(201, 93, 43);
+  color: white;
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-    background: rgb(196, 196, 196);
+  width: 8px;
+  height: 8px;
+  background: rgb(196, 196, 196);
 }
 
 ::-webkit-scrollbar-corner {
-    background: rgb(196, 196, 196);
+  background: rgb(196, 196, 196);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 174, 0);
+  background: rgb(255, 174, 0);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(255, 102, 0);
+  background: rgb(255, 102, 0);
 }
 
 body {
-    background: #f2f3f5;
-    color: #1a1a1d;
-    overflow-x: hidden;
+  background: #f2f3f5;
+  color: #1a1a1d;
+  overflow-x: hidden;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 a:hover {
-    color: rgb(233, 63, 20);
+  color: rgb(233, 63, 20);
 }
 
 @media screen and (max-width: 1000px) {
-    html {
-        font-size: 93.75%;
-    }
+  html {
+    font-size: 93.75%;
+  }
 }
 
 @media screen and (max-width: 580px) {
-    html {
-        font-size: 87.5%;
-    }
+  html {
+    font-size: 87.5%;
+  }
 }
