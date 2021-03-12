@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing page - 5</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -23,15 +26,93 @@
         <a href="#" class="link_header">contato</a>
       </nav>
       <span class="menu_mobile" id="menu_button">
-          <i class="fas fa-bars"></i>
+        <i class="fas fa-bars"></i>
       </span>
     </header>
     <main class="body">
-        <section class="banner">
-            <img src="./img/image_banner.png" alt="" class="topics">
-            <img src="./img/bg.jpg" alt="">
-        </section>
+      <section class="banner">
+        <img src="./img/image_banner.png" alt="topics" class="topics" />
+        <img src="./img/bg.jpg" alt="" />
+      </section>
+      <section class="trending">
+        <div class="title_box">
+          <span></span>
+          <h1>veículos em destaque</h1>
+          <span></span>
+        </div>
+        <div class="cards_section">
+          <div class="card">
+            <img src="./img/car_karman_ghia.png" alt="" class="image" />
+            <div class="content">
+              <h3 class="title">Volkswagen Karmann-ghia</h3>
+              <p class="description">1.6v, Gasolina, 2P, Manual</p>
+              <p class="age">1969</p>
+            </div>
+            <input type="button" value="Mais detalhes" class="more" />
+          </div>
+          <div class="card">
+            <img src="./img/car_chevrolet_opala.png" alt="" class="image" />
+            <div class="content">
+              <h3 class="title">Chevrolet Opala</h3>
+              <p class="description">4cc, Bancos de Corvin, 2,5</p>
+              <p class="age">1980</p>
+            </div>
+            <input type="button" value="Mais detalhes" class="more" />
+          </div>
+          <div class="card">
+            <img src="./img/car_volkswagen_gol.png" alt="" class="image" />
+            <div class="content">
+              <h3 class="title">Volkswagen Gol GTs</h3>
+              <p class="description">Turbo forjado, xenon e alturas</p>
+              <p class="age">legalizadas, 1991</p>
+            </div>
+            <input type="button" value="Mais detalhes" class="more" />
+          </div>
+        </div>
+      </section>
+      <section class="depoiments">
+        <div class="content">
+          <div class="left">
+            <div class="container">
+              <h1 class="title">serviços</h1>
+              <ul class="list">
+                <li>Compra</li>
+                <li>Venda</li>
+                <li>Consignação</li>
+                <li>Consultoria de Veiculos</li>
+                <li>Indicação de mecânicos e peças</li>
+              </ul>
+              <input type="button" value="Saiba mais" class="more" />
+            </div>
+          </div>
+          <div class="right">
+            <div class="container" id="text_container">
+              <h1 class="title">DEPOIMENTOS</h1>
+              <div class="slider">
+                <p class="text_slider">
+                  <i class="fas fa-quote-left"></i>
+                  <span class="text" id="text_depoiment">
+                  </span>
+                  <i class="fas fa-quote-right"></i>
+                </p>
+              </div>
+              <div class="bottom">
+                <div class="buttons">
+                  <button class="button prev" id="prev">
+                    <i class="fas fa-caret-left"></i>
+                  </button>
+                  <button class="button next" id="next">
+                    <i class="fas fa-caret-right"></i>
+                  </button>
+                </div>
+                <p class="name" id="name_author"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./js/menu.js"></script>
+    <script src="./js/slider.js"></script>
   </body>
 </html>
