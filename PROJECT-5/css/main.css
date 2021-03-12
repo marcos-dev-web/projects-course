@@ -1,0 +1,132 @@
+.header {
+    width: 100%;
+    display: flex;
+    background: white;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    height: 85px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    width: fit-content;
+    z-index: 10;
+    background: white;
+    width: 12rem;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.link_header {
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-style: oblique;
+}
+
+.menu_mobile {
+    font-size: 2rem;
+    position: absolute;
+    right: -100%;
+    cursor: pointer;
+    height: fit-content;
+    transition: 200ms;
+    z-index: 20;
+}
+
+nav.show {
+    height: calc(100vh - 85px);
+    overflow: auto;
+}
+
+.link_header {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+@media screen and (max-width: 800px) {
+    .links_header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-wrap: wrap;
+        position: fixed;
+        top: 85px;
+        left: 0;
+        background: white;
+        transition: all 200ms linear;
+        height: 0;
+        overflow: hidden;
+    }
+    .link_header {
+        margin-left: 0;
+        margin-top: 1.5rem;
+        width: 90%;
+        text-align: center;
+        padding: 0.5rem 0;
+    }
+    .link_header:last-child {
+        margin-bottom: 1.5rem;
+    }
+    .link_header:hover {
+        background: #f2f3f5;
+    }
+    .menu_mobile {
+        right: 2.5rem;
+    }
+}
+
+main.body {
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+
+section.banner {
+    max-width: 100vw;
+    background: black;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 60vh;
+    min-height: 500px;
+}
+
+section.banner img.topics {
+    position: absolute;
+    left: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: min(50%, 400px);
+    height: auto;
+}
+
+section.banner img {
+    width: 37.5rem;
+}
+
+@media screen and (min-width: 1200px) {
+    section.banner {
+        position: relative;
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section.banner img {
+        width: 70%;
+    }
+    section.banner {
+        min-height: 350px;
+    }
+    section.banner img.topics {
+        width: min(70%, 400px);
+    }
+}
