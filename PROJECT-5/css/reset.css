@@ -29,7 +29,7 @@ textarea {
 }
 
 ::-webkit-scrollbar-corner {
-    background: transparent;
+    background: rgb(196, 196, 196);
 }
 
 ::-webkit-scrollbar-thumb {
