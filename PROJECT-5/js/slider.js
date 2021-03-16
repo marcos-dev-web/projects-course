@@ -51,10 +51,48 @@ function changeSlide(s) {
   }, 400);
 }
 
+var interval = null;
+var clicked = false;
+
+function resetTimeout() {
+  if (interval != null) {
+    clearTimeout(interval);
+    interval = null;
+  }
+}
+
+function tryRestartTimeout() {
+  interval = setTimeout(() => {
+    clicked = false;
+    resetTimeout();
+    callOwn();
+  }, 20000);
+}
+
 const prev = document.querySelector("#prev");
 const next = document.querySelector("#next");
 
-prev.onclick = () => changeSlide("left");
-next.onclick = () => changeSlide("right");
+prev.onclick = () => {
+  changeSlide("left");
+  clicked = true;
+  resetTimeout();
+  tryRestartTimeout();
+};
+next.onclick = () => {
+  clicked = true;
+  changeSlide("right");
+  resetTimeout();
+  tryRestartTimeout();
+};
 
+function callOwn() {
+  if (!clicked) {
+    interval = setTimeout(() => {
+      changeSlide("left");
+      callOwn();
+    }, 5000);
+  }
+}
+
+callOwn();
 init();
