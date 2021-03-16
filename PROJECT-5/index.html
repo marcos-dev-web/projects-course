@@ -23,7 +23,7 @@
         <a href="#" class="link_header">galeria</a>
         <a href="#" class="link_header">eventos</a>
         <a href="#" class="link_header">sobre nós</a>
-        <a href="#" class="link_header">contato</a>
+        <a href="#form" class="link_header">contato</a>
       </nav>
       <span class="menu_mobile" id="menu_button">
         <i class="fas fa-bars"></i>
@@ -118,21 +118,37 @@
         </div>
         <div class="form">
           <div class="form_box">
-            <form method="post">
+            <form method="post" id="form">
               <div class="input_box">
-                <input type="text" placeholder="nome">
+                <input type="text" placeholder="nome" />
               </div>
               <div class="input_box row">
-                <input type="email" placeholder="email">
-                <input type="tel" placeholder="telefone">
+                <input type="email" placeholder="email" />
+                <input type="tel" placeholder="telefone" />
               </div>
-              <textarea id="text_area" cols="30" rows="10" placeholder="mensagem"></textarea>
+              <textarea
+                id="text_area"
+                cols="30"
+                rows="10"
+                placeholder="mensagem"
+              ></textarea>
               <button type="submit" class="button more">ENVIAR</button>
             </form>
           </div>
         </div>
       </section>
     </main>
+    <footer class="footer_home">
+      <nav class="links_header" id="footer_links">
+        <a href="#" class="link_header">home</a>
+        <a href="#" class="link_header">venda</a>
+        <a href="#" class="link_header">galeria</a>
+        <a href="#" class="link_header">eventos</a>
+        <a href="#" class="link_header">sobre nós</a>
+        <a href="#" class="link_header">contato</a>
+      </nav>
+      <p>Todos os direitos reservados a <b>RM Veículos Especiais</b></p>
+    </footer>
     <script src="./js/menu.js"></script>
     <script src="./js/slider.js"></script>
   </body>

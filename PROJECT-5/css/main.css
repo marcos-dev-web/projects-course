@@ -54,7 +54,7 @@
   z-index: 20;
 }
 
-nav.show {
+nav#menu_view.show {
   height: calc(100vh - 85px);
   overflow: auto;
 }
@@ -67,7 +67,7 @@ nav.show {
 }
 
 @media screen and (max-width: 800px) {
-  .links_header {
+  .links_header:not(#footer_links) {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -107,7 +107,7 @@ main.body {
 
 section.banner {
   max-width: 100vw;
-  background: black;
+  background: #010101;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
@@ -393,6 +393,11 @@ section.banner img {
   margin-bottom: 10px;
 }
 
+.input_box input:focus,
+#text_area:focus {
+  border-color: gray;
+}
+
 .input_box:not(.row) {
   min-width: 100%;
 }
@@ -430,9 +435,53 @@ textarea::-moz-placeholder{
   resize: none;
 }
 
+footer {
+  width: 100%;
+  height: 70px;
+  background: var(--soft-black);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1.5rem;
+  color: white;
+}
+
+.footer_home .link_header {
+  color: white;
+  margin-left: 0;
+  margin-right: 0.9rem;
+  font-size: 0.9rem;
+}
+
+.footer_home .link_header:hover {
+  color: var(--red);
+}
+
+@media screen and (max-width: 850px) {
+  .footer_home {
+    height: 80px;
+    flex-direction: column;
+    padding: 0.8rem;
+  }
+}
+
 @media screen and (max-width: 570px) {
   .depoiments .content {
     flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .footer_home {
+    height: 25vh;
+  }
+  .footer_home .links_header {
+    text-align: center;
+    word-break: keep-all;
+  }
+
+  .footer_home p {
+    text-align: center;
   }
 }
 
